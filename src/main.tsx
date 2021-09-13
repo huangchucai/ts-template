@@ -3,15 +3,11 @@ import React from "react";
 // import * as ReactDOM from 'react-dom';
 
 import  ReactDOM  from "react-dom";
-type Props = {
-  toWhat:string
-}
-
-function Hello (props:Props) {
-    return (<div>Hello {props.toWhat}</div>)
-}
+import 'antd/dist/antd.css';
+import App from './App'
+    const a = require('./test')
 
 ReactDOM.render(
-    <Hello toWhat="world by jsx" />,
+    <App toWhat="World by jsx" />,
     document.getElementById("app")
 )
